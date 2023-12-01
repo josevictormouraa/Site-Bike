@@ -1,0 +1,104 @@
+.introducao img {
+  max-width: 100%;
+}
+
+.introducao-bg {
+  background-color: #000000;
+  /* sompra interna branca no container / que parece que imagem esta vazando */
+  box-shadow: inset 0px -120px white;
+}
+
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 40px;
+  padding: 0 20px;
+}
+
+.introducao img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.introducao-conteudo {
+  align-self: flex-end;
+  padding-bottom: 200px;
+}
+
+.introducao-titulo {
+  margin-bottom: 32px;
+}
+
+.introducao-texto {
+  margin-bottom: 20px;
+
+}
+
+.botao {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: blue;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.botao:hover {
+  background-color: rgb(28, 63, 116);
+}
+
+@media (max-width: 1050px){
+  .introducao-conteudo{
+    padding-bottom: 150px;
+  }
+
+  .introducao-conteudo img{
+    max-width: 100%;
+  }
+
+}
+
+@media (max-width: 900px) {
+  .texto-grande {
+    font-size: 48px;
+  }
+}
+
+@media(max-width: 850px) {
+
+  .introducao-bg {
+    box-shadow: inset 0 -60px white;
+    padding-top: 40px;
+    background-color: #0f0e0e;
+  }
+
+  .introducao {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .introducao-conteudo {
+    padding-bottom: 80px;
+  }
+
+  .texto-grande {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+
+  .texto-medio {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.125;
+  }
+
+  .botao {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+
+  .introducao img {
+    height: 300px;
+    width: 100%;
+    object-position: top center;
+  }
+}

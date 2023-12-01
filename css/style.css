@@ -1,103 +1,20 @@
-body {
-  margin: 0;
-}
-
-ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.header-bg {
-  background-color: #000000;
-}
-
-.header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  box-sizing: border-box;
-  margin: 0 auto;
-  max-width: 1200px;
-}
-
-.header img {
-  width: 200px;
-}
-
-.header-menu {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-}
-
-.header-menu a {
-  display: inline-block;
-  padding: 16px 0;
-  text-decoration: none;
-  font-size: 1.5rem;
-  color: white;
-  position: relative;
-}
-
-.header-menu a::after {
-  content: '';
-  display: block;
-  width: 0px;
-  height: 2px;
-  background: white;
-  margin-top: 4px;
-  position: absolute;
-  transition: 0.3s;
-}
-
-.header-menu a:hover:after {
-  width: 100%;
-}
-
-@media (max-width: 800px) {
-  .header img {
-    width: 150px;
-  }
-
-
-  .header {
-    gap: 20px;
-  }
-
-  .header-menu {
-    gap: 20px;
-  }
-
-  .header-menu a {
-    background-color: #313131;
-    padding: 12px 16px;
-    border-radius: 5px;
-  }
-
-  .header-menu a::after {
-    display: none;
-  }
-
-  .header-menu a:hover {
-    background-color: #4c4a4a;
-  }
-
-}
-
-@media (max-width: 600px) {
-  .header img {
-    width: 100px;
-  }
-
-  .header-menu {
-    gap: 12px;
-  }
-
-  .header-menu a {
-    padding: 8px 12px;
-    font-size: 14px;
-  }
-}
+/* Global */
+@import './global/header.css';
+@import './global/footer.css';
+@import './global/global.css';
+/* Utilities */
+@import './utilidades/componentes.css';
+@import './utilidades/tipografia.css';
+@import './utilidades/cores.css';
+/* Bicicletas */
+@import './bicicletas/bicicletas-lista.css';
+@import './bicicletas/bicicletas.css';
+/* Page Main Home */
+@import './home/introducao.css';
+@import './home/parceiros.css';
+@import './home/depoimneto.css';
+@import './home/tecnologias.css';
+/* Page Seguros */
+@import './seguros/seguros.css';
+/* Page Termos */
+@import './termos/termos.css';
